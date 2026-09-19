@@ -20,7 +20,7 @@ set -euo pipefail
 # Pin a specific Pandoc image version so output stays consistent over time.
 # Check https://hub.docker.com/r/pandoc/latex/tags for available tags and
 # update deliberately when you want to move to a newer Pandoc version.
-PANDOC_IMAGE="pandoc/latex:3.1.11"
+PANDOC_IMAGE="pandoc/latex:3.9.0.2-ubuntu"
 
 # Resolve the repo root as the directory this script lives in, so paths
 # work the same whether you run it from inside the repo or elsewhere.
