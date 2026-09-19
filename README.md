@@ -28,6 +28,30 @@ Optionally point at a different output folder:
 ./joplin-to-docs.sh drafts/your-note.md path/to/other-folder
 ```
 
+## Citations
+
+Write citations in your note using Pandoc's standard syntax, e.g. `[@smith2020]`
+or `@smith2020`. Citekeys should match your `.bib` file exactly (Better BibTeX
+citekeys from Zotero work well here).
+
+Pass a `.bib` file as a third argument to resolve citations and generate a
+bibliography in both outputs:
+
+```bash
+./joplin-to-docs.sh drafts/your-note.md outputs path/to/references.bib
+```
+
+Or set it once via an environment variable so you don't have to repeat it:
+
+```bash
+export BIBLIOGRAPHY=~/Zotero/library.bib
+./joplin-to-docs.sh drafts/your-note.md
+```
+
+The Joplin [BibTeX plugin](https://joplinapp.org/plugins/plugin/com.xUser5000.bibtex/)
+can insert `@citekey` references into notes directly from a `.bib` file if you
+want autocomplete rather than typing keys by hand.
+
 ## Notes
 
 - `drafts/` and `outputs/` are gitignored by default — this repo versions
