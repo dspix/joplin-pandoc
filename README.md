@@ -20,7 +20,7 @@ cd joplin-pandoc
 ./joplin-to-docs.sh drafts/your-note.md
 ```
 
-Output lands in `outputs/your-note.docx` and `outputs/your-note.tex`.
+Output lands in `outputs/your-note.docx` and `outputs/your-note.tex`. It might need executable permissions updating `chmod +x jolpin-to-docs.sh`.
 
 Optionally point at a different output folder:
 
